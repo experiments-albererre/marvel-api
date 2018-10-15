@@ -15,6 +15,9 @@ button.onclick = function() {
     var hash = CryptoJS.MD5(time + keysInfo.private + keysInfo.public).toString();
     var url = 'https://gateway.marvel.com:443/v1/public/characters'
     
+    dom.name.textContent = "Loading...";
+    dom.description.textContent = " ";
+
     $.getJSON(url, {
         name: _name,
         ts: time,

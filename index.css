@@ -1,8 +1,29 @@
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
 .container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
     margin-top: 10vh;
     font-size: 1.5em;
-    
+    padding: 50px;
+}
+
+.name {
+    font-size: 2em;
+    margin-bottom: 2vh;
+}
+
+.button {
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+.input {
+    font-size: 1.5em;
+    width: 800px;
 }
